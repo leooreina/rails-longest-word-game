@@ -1,0 +1,59 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.letters {
+  list-style: none;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  padding-left: 0;
+}
+
+.letter {
+  background-color: #46acff;
+  padding: 20px;
+  justify-self: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 0 0.5em grey;
+}
+
+.word-input {
+  display: block;
+  float: left;
+  height: 32px;
+  width: 55%;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.submit-word {
+  display: block;
+  float: left;
+  height: 36.2px;
+  margin: -0.1px -2px -2px;
+  width: 60px;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  &:hover {
+    background-color: #289cfc;
+    cursor: pointer;
+  }
+}
+
+.play-link {
+  text-decoration: none;
+  color: #289cfc;
+  &:hover {
+    color: rgb(0, 148, 0);
+    cursor: pointer;
+  }
+}
